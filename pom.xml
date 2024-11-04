@@ -22,6 +22,7 @@
         <commonIO.version>2.17.0</commonIO.version>
         <jfaker.version>1.0.2</jfaker.version>
         <aspectj.version>1.9.20.1</aspectj.version>
+        <surefire.plugin>3.1.2</surefire.plugin>
 
     </properties>
 
@@ -102,7 +103,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.1.2</version>
+            <version>${surefire.plugin}</version>
             <configuration>
                 <argLine>
                     -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
